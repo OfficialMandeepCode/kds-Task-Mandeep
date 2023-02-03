@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f524b35cf3bf3df64ea2275def30dde9",
+    "entities": [
+      {
+        "tableName": "tblProduct",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `productName` TEXT NOT NULL, `productPrice` TEXT NOT NULL, `discount` TEXT NOT NULL, `coupon` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "userID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "productName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "productPrice",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coupon",
+            "columnName": "coupon",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "userID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f524b35cf3bf3df64ea2275def30dde9')"
+    ]
+  }
+}

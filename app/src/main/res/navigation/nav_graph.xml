@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mandeep.kdsmandeep.ui.fragment.ProductList"
+        android:label="ProductList"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_homeFragment_to_addNewProduct"
+            app:destination="@id/addNewProduct" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addNewProduct"
+        android:name="com.mandeep.kdsmandeep.ui.fragment.AddNewProduct"
+        android:label="Add New Product"
+        tools:layout="@layout/fragment_add_new_product">
+        <argument
+            android:name="prodId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

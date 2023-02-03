@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KDS Mandeep</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_Price">Product Price</string>
+    <string name="hint_coupon">Coupon</string>
+    <string name="hint_discount">Discount</string>
+    <string name="error_empty_name">Enter Product Name</string>
+    <string name="error_empty_price">Enter product Price</string>
+    <string name="error_empty_coupon">Enter coupon code</string>
+    <string name="error_empty_discount">Enter discount</string>
+</resources>
